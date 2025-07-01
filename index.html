@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternak Jaya Farm - Peternakan Sapi Qurban Terpercaya</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for modern icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Using Inter font as default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom gradient for hero section */
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(22,101,52,0.1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-800 flex items-center">
+                <i data-lucide="6.jpeg" class="mr-2"></i>
+                Tenak Jaya Farm
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#keunggulan" class="text-gray-600 hover:text-green-700 font-medium transition-colors">Keunggulan</a>
+                <a href="#pilihan" class="text-gray-600 hover:text-green-700 font-medium transition-colors">Pilihan Sapi</a>
+                <a href="#testimoni" class="text-gray-600 hover:text-green-700 font-medium transition-colors">Testimoni</a>
+                <a href="#kontak" class="bg-green-600 text-white font-bold py-2 px-5 rounded-full hover:bg-green-700 transition-all shadow-md">Hubungi Kami</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#keunggulan" class="block py-2 px-6 text-gray-600 hover:bg-green-50">Keunggulan</a>
+            <a href="#pilihan" class="block py-2 px-6 text-gray-600 hover:bg-green-50">Pilihan Sapi</a>
+            <a href="#testimoni" class="block py-2 px-6 text-gray-600 hover:bg-green-50">Testimoni</a>
+            <a href="#kontak" class="block py-4 px-6 bg-green-600 text-white text-center font-bold">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[80vh] flex items-center hero-gradient" style="background-image: url();">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 leading-tight">
+                        Qurban Terbaik dari Peternakan Terpercaya
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600">
+                        Menyediakan sapi qurban sehat, terawat, dan sesuai syariat untuk menyempurnakan ibadah Anda.
+                    </p>
+                    <div class="mt-10">
+                        <a href="#pilihan" class="bg-green-600 text-white font-bold py-4 px-8 rounded-full hover:bg-green-700 transition-all shadow-xl text-lg transform hover:scale-105">
+                            Lihat Pilihan Sapi
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full text-center mb-6">
+                <a href="#keunggulan" class="animate-bounce inline-block">
+                    <i data-lucide="arrow-down-circle" class="h-10 w-10 text-green-700"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Keunggulan Section -->
+        <section id="keunggulan" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900">Mengapa Memilih Kami?</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Komitmen kami adalah memberikan yang terbaik untuk ibadah qurban Anda.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Sapi Sehat & Terawat</h3>
+                        <p class="text-gray-500">Pakan berkualitas, kandang bersih, dan pengawasan dokter hewan rutin.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Sesuai Syariat</h3>
+                        <p class="text-gray-500">Memenuhi semua kriteria umur dan kesehatan untuk hewan qurban.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="truck" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Gratis Ongkos Kirim</h3>
+                        <p class="text-gray-500">Layanan antar gratis untuk wilayah padangan,ngawi dan sekitarnya.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="text-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="thumbs-up" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pemesanan Mudah</h3>
+                        <p class="text-gray-500">Proses pemesanan yang cepat, mudah, dan transparan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilihan Sapi Section -->
+        <section id="pilihan" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900">Pilihan Sapi Qurban 2025</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tersedia berbagai jenis dan bobot sapi yang bisa Anda pilih sesuai kebutuhan.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Sapi Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/a3e635/14532d?text=Sapi+Limousin" alt="Sapi Limousin" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded-full">Best Seller</span>
+                            <h3 class="text-2xl font-bold mt-3">Sapi Limousin</h3>
+                            <p class="text-gray-500 mt-2">Dikenal dengan kualitas daging premium dan postur yang besar.</p>
+                            <div class="mt-4 space-y-2">
+                                <p><span class="font-semibold">Bobot:</span> 450kg - 900kg</p>
+                                <p><span class="font-semibold">Usia:</span> > 2 Tahun</p>
+                            </div>
+                            <div class="mt-6">
+                                <p class="text-sm text-gray-500">Mulai dari</p>
+                                <p class="text-3xl font-extrabold text-green-700">Rp 28.000.000</p>
+                            </div>
+                            <a href="#kontak" class="mt-6 w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                                Tanya Sekarang
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Sapi Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/86efac/14532d?text=Sapi+Simental" alt="Sapi Simental" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mt-3">Sapi Simental</h3>
+                            <p class="text-gray-500 mt-2">Pertumbuhan cepat dengan perototan yang baik, pilihan favorit.</p>
+                            <div class="mt-4 space-y-2">
+                                <p><span class="font-semibold">Bobot:</span> 400kg - 950kg</p>
+                                <p><span class="font-semibold">Usia:</span> > 2 Tahun</p>
+                            </div>
+                            <div class="mt-6">
+                                <p class="text-sm text-gray-500">Mulai dari</p>
+                                <p class="text-3xl font-extrabold text-green-700">Rp 25.000.000</p>
+                            </div>
+                            <a href="#kontak" class="mt-6 w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                                Tanya Sekarang
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Sapi Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bbf7d0/14532d?text=Sapi+Brahman" alt="Sapi Brahman" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mt-3">Sapi Brahman</h3>
+                            <p class="text-gray-500 mt-2">Tahan terhadap cuaca tropis, cocok untuk kondisi di Indonesia.</p>
+                            <div class="mt-4 space-y-2">
+                                <p><span class="font-semibold">Bobot:</span> 350kg - 500kg</p>
+                                <p><span class="font-semibold">Usia:</span> > 2 Tahun</p>
+                            </div>
+                            <div class="mt-6">
+                                <p class="text-sm text-gray-500">Mulai dari</p>
+                                <p class="text-3xl font-extrabold text-green-700">Rp 22.000.000</p>
+                            </div>
+                            <a href="#kontak" class="mt-6 w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                                Tanya Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section id="testimoni" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900">Apa Kata Pelanggan Kami?</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kepuasan Anda adalah prioritas utama kami.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <img src="https://placehold.co/100x100/e2e8f0/4a5568?text=A" alt="Foto Pelanggan" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Alvian</p>                             </p>
+                                <p class="text-sm text-gray-500">Ngawi,jawa timur</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Alhamdulillah, sapinya sehat dan gemuk. Pengiriman tepat waktu dan pelayanannya sangat ramah. Tahun depan pesan di sini lagi, Insya Allah."</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <img src="https://placehold.co/100x100/e2e8f0/4a5568?text=B" alt="Foto Pelanggan" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">SURATNO</p>
+                                <p class="text-sm text-gray-500">Cepu,blora jawa tengah</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Tidak salah pilih Ternak Jaya Farm. Sapinya sesuai dengan yang di foto, bahkan lebih besar. Prosesnya transparan dan mudah. Sangat direkomendasikan!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="py-20 bg-green-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Pesan Sapi Qurban Anda Sekarang!</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-green-200">Jangan ragu untuk menghubungi kami untuk konsultasi atau pemesanan. Tim kami siap membantu Anda.</p>
+                    <div class="mt-10 bg-white text-gray-800 max-w-sm mx-auto p-8 rounded-lg shadow-2xl">
+                        <h3 class="text-xl font-bold mb-4">Hubungi Kami Melalui:</h3>
+                        <a href="https://wa.me/6281779842712?text=Assalamualaikum,%20saya%20tertarik%20dengan%20sapi%20qurban%20di%20Ternak Jaya%20Farm." target="_blank" class="flex items-center justify-center bg-green-500 text-white font-bold py-4 px-6 rounded-lg hover:bg-green-600 transition-colors w-full text-lg">
+                            <i data-lucide="message-circle" class="mr-3"></i>
+                            WhatsApp
+                        </a>
+                        <p class="mt-4 text-gray-500 text-sm">Klik untuk langsung terhubung!</p>
+                        <div class="mt-6 text-left space-y-3">
+                            <p class="flex items-start"><i data-lucide="phone" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i> <span>0812-3456-7890</span></p>
+                            <p class="flex items-start"><i data-lucide="mail" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i> <span>kontak@Ternak_jaya_farm.com</span></p>
+                            <p class="flex items-start"><i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 flex-shrink-0"></i> <span>Jl.DS.Getas,RT.001/RW.001, Cepu, Blora, Jawa Tengah</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Ternak Jaya Farm Farm. Semua Hak Cipta Dilindungi.</p>
+            <p class="text-sm text-gray-400 mt-2">Dibuat dengan ❤️ untuk Ibadah Qurban Anda.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
